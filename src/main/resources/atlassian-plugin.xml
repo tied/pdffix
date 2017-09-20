@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<atlassian-plugin key="${atlassian.plugin.key}" name="${project.name}" plugins-version="2">
+  <plugin-info>
+    <description>${project.description}</description>
+    <version>${project.version}</version>
+    <vendor name="${project.organization.name}" url="${project.organization.url}"/>
+    <param name="plugin-icon">images/pluginIcon.png</param>
+    <param name="plugin-logo">images/pluginLogo.png</param>
+  </plugin-info>
+  <!-- add our i18n resource -->
+  <resource type="i18n" name="i18n" location="pdffix"/>
+  <!-- add our web resources -->
+  <web-resource key="pdffix-resources" name="pdffix Web Resources">
+    <dependency>com.atlassian.auiplugin:ajs</dependency>
+    <resource type="download" name="pdffix.js" location="/js/pdffix.js"/>
+    <context>atl.general</context>
+  </web-resource>
+  <rest name="PDF Fix Resource" i18n-name-key="pdf-fix-resource.name" key="pdf-fix-resource" path="/pdffixresource" version="1.0">
+    <description key="pdf-fix-resource.description">The PDF Fix Resource Plugin</description>
+  </rest>
+</atlassian-plugin>
