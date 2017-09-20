@@ -6,8 +6,8 @@
     <artifactId>pdffix</artifactId>
     <version>1.0</version>
     <organization>
-        <name>Example Company</name>
-        <url>http://www.example.com/</url>
+        <name>Schneider Electric</name>
+        <url>https://dcimsupport.apc.com/</url>
     </organization>
     <name>pdffix</name>
     <description>This is the dk.schneiderelectric.dcimteam:pdffix plugin for Atlassian Confluence.</description>
@@ -148,8 +148,8 @@
         </plugins>
     </build>
     <properties>
-        <confluence.version>6.4.0</confluence.version>
-        <confluence.data.version>5.10.1</confluence.data.version>
+        <confluence.version>5.8.8</confluence.version>
+        <confluence.data.version>5.8.8</confluence.data.version>
         <amps.version>6.2.4</amps.version>
         <plugin.testrunner.version>1.2.3</plugin.testrunner.version>
         <atlassian.spring.scanner.version>1.2.6</atlassian.spring.scanner.version>
